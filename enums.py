@@ -1,0 +1,32 @@
+from enum import Enum, StrEnum
+
+class ORDER_STATUS(Enum):
+  USER_SUBMITTED = 1
+  CONFIRMED = 2
+  PLACED = 3
+  PACKING = 4
+  READY = 5
+  DELIVERING = 6
+  COMPLETE = 7
+  CANCELLED = 8
+
+class ORDER_TYPE(Enum):
+  DELIVERY = 'DELIVERY'
+  TAKEOUT = 'TAKEOUT'
+  DINEIN = 'DINEIN'
+
+class PAYMENT_STATUS(Enum):
+  PAID = 'PAID'
+  NOT_PAID = 'NOT_PAID'
+
+class PAYMENT_METHOD(Enum):
+  CASH = 'CASH'
+  CREDIT = 'CREDIT'
+  DEBIT = 'DEBIT'
+
+class PRIORITY(Enum):
+  HIGH = 'HIGH'
+  NORMAL = 'NORMAL'
+  LOW = 'LOW'
+
+  
